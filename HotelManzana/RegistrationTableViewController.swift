@@ -58,7 +58,6 @@ class RegistrationTableViewController: UITableViewController {
     @IBAction func unwindToRegistraion(_ unwindSegue: UIStoryboardSegue) {
         
             guard let addRegistraionTableViewController = unwindSegue.source as? AddRegistrationTableViewController, let registraion = addRegistraionTableViewController.registration else {
-                registraion.
                 return
             }
             
@@ -66,6 +65,7 @@ class RegistrationTableViewController: UITableViewController {
             tableView.reloadData()
     }
     
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

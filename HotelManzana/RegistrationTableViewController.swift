@@ -57,9 +57,7 @@ class RegistrationTableViewController: UITableViewController {
     
     @IBAction func unwindToRegistraion(_ unwindSegue: UIStoryboardSegue) {
         
-            guard let addRegistraionTableViewController = unwindSegue.source as? AddRegistrationTableViewController, let registraion = addRegistraionTableViewController.registration else {
-                return
-            }
+            guard let addRegistraionTableViewController = unwindSegue.source as? AddRegistrationTableViewController, let registraion = addRegistraionTableViewController.registration else { return }
             
             registrations.append(registraion)
             tableView.reloadData()
